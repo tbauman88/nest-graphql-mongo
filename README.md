@@ -1,5 +1,10 @@
 # Build a GraphQL Server with NestJS and MongoDB
 
+## Requirements
+
+- Node.js 24.9+ (see `.nvmrc`)
+- Docker (for MongoDB)
+
 ## Installation
 
 ```bash
@@ -37,4 +42,19 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-Open [http://localhost:3000/graphql](http://localhost:3000/graphql) to open GraphQL Playground.
+Open [http://localhost:3000/graphql](http://localhost:3000/graphql) to open the Apollo Sandbox.
+
+The MongoDB connection string defaults to `mongodb://localhost/nest` and can be overridden with the `MONGODB_URI` environment variable.
+
+## Tests
+
+```bash
+# unit tests
+$ npm run test
+
+# e2e tests (requires MongoDB running)
+$ npm run test:e2e
+
+# lint
+$ npm run lint
+```

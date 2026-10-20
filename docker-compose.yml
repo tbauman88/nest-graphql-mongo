@@ -1,7 +1,5 @@
-version: '3.7'
-
 services:
   mongodb:
-    image: mongo:latest
+    image: mongo:8
     ports:
       - 27017:27017

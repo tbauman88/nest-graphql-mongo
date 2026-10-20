@@ -2,12 +2,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-input CatInput {
-  name: String!
-  age: Int!
-  breed: String!
-}
-
 type CatType {
   id: ID!
   name: String!
@@ -15,11 +9,17 @@ type CatType {
   breed: String!
 }
 
+type Query {
+  hello: String!
+  cats: [CatType!]!
+}
+
 type Mutation {
   createCat(input: CatInput!): CatType!
 }
 
-type Query {
-  hello: String!
-  cats: [CatType!]!
+input CatInput {
+  name: String!
+  age: Int!
+  breed: String!
 }
