@@ -20,7 +20,7 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "dependencies": {
-    "@nestjs/common": "^7.0.3",
+    "@nestjs/common": "^10.4.16",
     "@nestjs/core": "^7.0.3",
     "@nestjs/graphql": "^7.0.9",
     "@nestjs/mongoose": "^6.4.0",
